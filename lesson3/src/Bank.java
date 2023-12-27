@@ -8,12 +8,8 @@ public class Bank {
         System.out.println("Введите количество месяцев: ");
         int months = scanner.nextInt();
         System.out.println("Конечная сумма вклада: ");
-        float summ = 0;
         for (int i = 0; i<months;i++)
-        {
-            summ = vklad + vklad*7/100;
-            vklad=summ;
-        }
-        System.out.print(summ);
+            vklad *= 1.07;
+        System.out.print(vklad);
     }
 }
